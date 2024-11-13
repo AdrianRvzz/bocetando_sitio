@@ -1,0 +1,220 @@
+:root {
+    --dark: #191919;
+    --navy: #2D4263;
+    --red: #C84B31;
+    --cream: #ECDBBA;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--dark);
+    color: var(--cream);
+    line-height: 1.6;
+}
+
+header, .footer {
+    background-color: var(--navy);
+    text-align: center;
+    padding: 1.5em;
+    color: var(--cream);
+    font-family: "Bebas Neue",Arial, sans-serif;
+}
+
+header, nav, h1, h2, h3, footer {
+    font-family: "Bebas Neue",Arial, sans-serif;
+    letter-spacing: 3px;
+
+}
+
+.header img.logo {
+    width: 100px;
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    background-color: var(--red);
+    padding: 1em;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar a {
+    color: var(--cream);
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 2em;
+    text-align: center;
+}
+
+.full-screen-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/gym_interior.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);  
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.full-screen-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #FFD700; 
+}
+
+.full-screen-section p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #f0f0f0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #ff5733; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c70039; 
+}
+
+.intro, .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 2em 0;
+}
+
+.intro img, .service img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.intro p, .service {
+    flex: 1;
+    min-width: 280px;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    padding: 0.8em;
+    margin: 0.3em 0;
+    border-radius: 4px;
+    border: 1px solid var(--cream) ;
+    background-color: var(--dark);
+    color: var(--cream);
+}
+
+.contact-form button {
+    background-color: var(--red);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.section {
+    padding: 2em;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: var(--cream);
+}
+
+.intro, .benefits, .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 2em 0;
+}
+
+.intro img, .benefit-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.intro p, .benefit-item, .testimonial {
+    flex: 1;
+    min-width: 280px;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: var(--navy);
+    color: var(--cream);
+}
+
+.benefit-item h3, .testimonial p {
+    font-size: 1.1em;
+    color: var(--cream);
+}
+
+#valores li{
+    list-style: none;
+    padding: 1rem;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.testimonial {
+    max-width: 600px;
+    background-color: var(--dark);
+    padding: 1.5em;
+    border: 1px solid var(--cream);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1em 2em;
+    margin-top: 1em;
+    color: var(--cream);
+    background-color: var(--red);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--dark);
+}
